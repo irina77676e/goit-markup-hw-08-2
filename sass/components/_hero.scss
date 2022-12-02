@@ -1,0 +1,46 @@
+.hero__main {
+    text-align: center;
+}
+
+.hero {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #C4C4C4;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 200px 0 200px 0;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images2/hero/header-img-mob-@1x.jpg);
+    
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+         (min-resolution: 2dppx){
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images2/hero/header-img-mob-@2x.jpg);
+    }
+
+}
+
+.hero__title {
+    font-weight: 900;
+    font-size: 5vw;
+    line-height: calc(60 / 44);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--link-color);
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 480px) and (max-width: 767.5px) {
+        font-size: 26px;
+        line-height: calc(42/26);
+        text-align: center;
+    }
+}
+
+
+

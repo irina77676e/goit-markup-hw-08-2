@@ -1,0 +1,26 @@
+
+/* HEADER */
+.line {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.header__group {
+    display: none;
+  
+    @media screen and (min-width:768px){
+        display: flex;
+        align-items: center;
+    }
+}
+
