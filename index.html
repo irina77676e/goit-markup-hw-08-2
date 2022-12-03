@@ -88,7 +88,7 @@
           </button>
         </div>
       </section>
-      <!-- <section class="about">
+      <section class="about">
         <div class="container">
           <h2 class="visually-hidden">Наші особливості</h2>
           <ul class="about__us">
@@ -143,16 +143,19 @@
           </ul>
         </div>
       </section>
-      <section class="works">
+      <!-- <section class="works">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="works-list">
             <li class="works-item">
               <img
-                src="./img/img.jpg"
-                alt="клавіатура"
-                width="370"
-                height="294"
+                srcset="
+                  ./images/work/img_pc_370_1x.jpg 370w,
+                  ./images/work/img_pc_740_2x.jpg 740w
+                "
+                sizes="(min-width:1200px) 370px"
+                src="./images/work/img_pc_370_1x.jpg"
+                alt=""
               />
               <div class="overlay-box">
                 <p class="overlay-text">Десктопні додатки</p>
@@ -160,10 +163,13 @@
             </li>
             <li class="works-item">
               <img
-                src="./img/box2.jpg"
-                alt="телефон"
-                width="370"
-                height="294"
+                srcset="
+                  ./images/work/img_pc_370_1x-1.jpg 370w,
+                  ./images/work/img_pc_740_2x-1.jpg 740w
+                "
+                sizes="(min-width:1200px) 370px"
+                src="./images/work/img_pc_370_1x-1.jpg"
+                alt=""
               />
               <div class="overlay-box">
                 <p class="overlay-text">Мобільні додатки</p>
@@ -171,10 +177,13 @@
             </li>
             <li class="works-item">
               <img
-                src="./img/box3.jpg"
-                alt="планшет"
-                width="370"
-                height="294"
+                srcset="
+                  ./images/work/img_pc_370_1x-2.jpg 370w,
+                  ./images/work/img_pc_740_2x-2.jpg 740w
+                "
+                sizes="(min-width:1200px) 370px"
+                src="./images/work/img_pc_370_1x-2.jpg"
+                alt=""
               />
               <div class="overlay-box">
                 <p class="overlay-text">Дизайнерські рішення</p>
@@ -182,19 +191,64 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>  -->
 
-      <section class="team">
+      <!-- <section class="team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-item">
             <li class="team-box">
-              <img
-                src="./img/1.jpg"
-                alt="Designer Ігор Дем'яненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img/team-desctop/desctop-igor1x.webp  1x,
+                    ./images/img/team-desctop/desctop-igor@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img/team-desctop/desctop-igor1x.jpg  1x,
+                    ./images/img/team-desctop/desctop-igor@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img/team-tablet/tablet-igor1x.webp  1x,
+                    ./images/img/team-tablet/tablet-igor@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img/team-tablet/tablet-igor1x.jpg  1x,
+                    ./images/img/team-tablet/tablet-igor@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img/team-smart/smart-igor1x.webp  1x,
+                    ./images/img/team-smart/smart-igor@2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img/team-smart/smart-igor1x.jpg  1x,
+                    ./images/img/team-smart/smart-igor@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/img/team-smart/smart-igor1x.jpg"
+                  alt="Ігор Дем'яненко"
+                />
+              </picture>
               <h3 class="team-name">Ігор Дем'яненко</h3>
               <p class="team-workers">Product Designer</p>
               <ul class="social-list">
@@ -254,12 +308,58 @@
             </li>
 
             <li class="team-box">
-              <img
-                src="./img/2.jpg"
-                alt="Frontend Ольга Рєпіна"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img/team-desctop/desctop-olga1x.webp  1x,
+                    ./images/img/team-desctop/desctop-olga@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img/team-desctop/desctop-olga1x.jpg  1x,
+                    ./images/img/team-desctop/desctop-olga@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img/team-tablet/tablet-olga1x.webp  1x,
+                    ./images/img/team-tablet/tablet-olga@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img/team-tablet/tablet-olga1x.jpg  1x,
+                    ./images/img/team-tablet/tablet-olga@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img/team-smart/smart-olga1x.webp  1x,
+                    ./images/img/team-smart/smart-olga@2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img/team-smart/smart-olga1x.jpg  1x,
+                    ./images/img/team-smart/smart-olga@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/img/team-smart/smart-olga1x.jpg"
+                  alt="Ольга Рєпіна"
+                />
+              </picture>
+
               <h3 class="team-name">Ольга Рєпіна</h3>
               <p class="team-workers">Frontend Developer</p>
               <ul class="social-list">
@@ -319,12 +419,57 @@
               </ul>
             </li>
             <li class="team-box">
-              <img
-                src="./img/3.jpg"
-                alt="Marketing Микола Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img/team-desctop/desctop-nikolay1x.webp  1x,
+                    ./images/img/team-desctop/desctop-nikolay@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img/team-desctop/desctop-nikolay1x.jpg  1x,
+                    ./images/img/team-desctop/desctop-nikolay@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img/team-tablet/tablet-nikolay1x.webp  1x,
+                    ./images/img/team-tablet/tablet-nikolay@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img/team-tablet/tablet-nikolay1x.jpg  1x,
+                    ./images/img/team-tablet/tablet-nikolay@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img/team-smart/smart-nikolay1x.webp  1x,
+                    ./images/img/team-smart/smart-nikolay@2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img/team-smart/smart-nikolay1x.jpg  1x,
+                    ./images/img/team-smart/smart-nikolay@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/img/team-smart/smart-nikolay1x.jpg"
+                  alt="Микола Тарасов"
+                />
+              </picture>
               <h3 class="team-name">Микола Тарасов</h3>
               <p class="team-workers">Marketing</p>
               <ul class="social-list">
@@ -384,12 +529,57 @@
               </ul>
             </li>
             <li class="team-box">
-              <img
-                src="./img/4.jpg"
-                alt="UI Designer Михайло Єрмаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img/team-desctop/desctop-mihail1x.webp  1x,
+                    ./images/img/team-desctop/desctop-mihail@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img/team-desctop/desctop-mihail1x.jpg  1x,
+                    ./images/img/team-desctop/desctop-mihail@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img/team-tablet/tablet-mihail1x.webp  1x,
+                    ./images/img/team-tablet/tablet-mihail@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img/team-tablet/tablet-mihail1x.jpg  1x,
+                    ./images/img/team-tablet/tablet-mihail@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img/team-smart/smart-mihail1x.webp  1x,
+                    ./images/img/team-smart/smart-mihail@2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img/team-smart/smart-mihail1x.jpg  1x,
+                    ./images/img/team-smart/smart-mihail@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/img/team-smart/smart-mihail1x.jpg"
+                  alt="Михайло Єрмаков"
+                />
+              </picture>
               <h3 class="team-name">Михайло Єрмаков</h3>
               <p class="team-workers">UI Designer</p>
               <ul class="social-list">
