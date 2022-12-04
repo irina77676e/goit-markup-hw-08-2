@@ -1,12 +1,28 @@
 /* TEAM */
 .team {
     background-color: #f5f4fa;
-    padding: 94px 0px;
+
+    @media screen and (min-width:1200px) {
+        padding-bottom: 94px;
+    }
+
+    @media screen and (min-width:768px) {
+       
+    }
+    @media screen and (min-width:480px) and (max-width:767px) {
+        padding-top: 60px;
+        padding-bottom: 26px;
+    }
 }
 
 .team-item {
-    display: flex;
-    gap: 30px;
+    @media screen and (min-width:480px) and (max-width:767px) {
+        gap: 30px;
+    }
+    
+    @media screen and (min-width:768px) and (max-width:1200px) {
+        display: flex;
+    }
 }
 
 .team-box {
@@ -23,8 +39,8 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color);
-    padding-top: 30px;
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .team-workers {
@@ -38,12 +54,20 @@
 }
 
 .social-list {
-    margin-top: 20px;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+
+    @media screen and (min-width:1200px){
+        padding-bottom: 30px;
+        gap: 10px;
+    }
+
+    @media screen and (min-width:480px) and (max-width:767px){
+        padding-bottom: 24px;
+        gap:30px;
+    }
 }
 
 .social-link {
