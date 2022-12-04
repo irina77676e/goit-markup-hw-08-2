@@ -38,7 +38,13 @@
 
 .nav__item,
 .link  {
-     padding: 24px 0px 25px 0px;
+    @media screen and (min-width:1200px){
+        padding: 24px 0px 25px 0px;
+    }
+    
+    @media screen and (min-width:480px) and (max-width:767px){
+        padding: 16px 0px 16px 0px;
+    }
 }
 .nav__list {
     transition-property: background-color;

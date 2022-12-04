@@ -16,7 +16,9 @@
 }
 
 .container-footer {
+    @media screen and (min-width:1200px){
     margin-right: 93px;
+    }
 }
 
 .portfolio-container-item {
