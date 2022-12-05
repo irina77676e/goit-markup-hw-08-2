@@ -24,8 +24,6 @@
 
 .hero__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60 / 44);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--link-color);
@@ -33,11 +31,16 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 35px;
+    text-align: center;
 
-    @media screen and (min-width: 480px) and (max-width: 767.5px) {
+    @media screen and (min-width:1200px){
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    }
+
+    @media screen and (min-width: 480px) and (max-width:1199px) {
         font-size: 26px;
         line-height: calc(42/26);
-        text-align: center;
         width: 360px;
         margin-bottom: 30px;
     }

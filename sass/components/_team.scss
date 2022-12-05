@@ -7,7 +7,8 @@
     }
 
     @media screen and (min-width:768px) {
-       
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
     @media screen and (min-width:480px) and (max-width:767px) {
         padding-top: 60px;
@@ -16,13 +17,14 @@
 }
 
 .team-item {
-    @media screen and (min-width:480px) and (max-width:767px) {
-        gap: 30px;
-    }
+    gap: 30px;
     
-    @media screen and (min-width:768px) and (max-width:1200px) {
+    @media screen and (min-width:768px) and (max-width:1199px) {
         display: flex;
-    }
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
 }
 
 .team-box {
@@ -30,6 +32,10 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width:480px) and (max-width:767px){
+        margin-bottom: 30px;
+    }
 }
 
 .team-name {
@@ -54,7 +60,6 @@
 }
 
 .social-list {
-    margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,6 +68,10 @@
         padding-bottom: 30px;
         gap: 10px;
     }
+        @media screen and (min-width:768px) and (max-width:1199px){
+            gap: 10px;
+            padding-bottom: 24px;
+        }
 
     @media screen and (min-width:480px) and (max-width:767px){
         padding-bottom: 24px;

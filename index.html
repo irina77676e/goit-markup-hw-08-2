@@ -41,7 +41,7 @@
         </nav>
 
         <ul class="header__group">
-          <li>
+          <li class="list-item">
             <a
               class="contacts__link mail__link link"
               href="mailto:info@devstudio.com"
@@ -54,7 +54,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="list-item">
             <a
               class="contacts__link link"
               href="tel:+380961111111"
@@ -786,18 +786,20 @@
         <div class="footer-input">
           <p class="footer-input-text">Підпишіться на розсилку</p>
           <form class="footer-form">
-            <input
-              type="text"
-              class="footer-input-subscription"
-              name="user-subscription"
-              placeholder="E-mail"
-            />
-            <button class="footer-btn button" type="submit">
-              Підписатися
-              <svg class="footer-icons" width="24" height="24">
-                <use href="./images/icons.svg#icon-icon-send"></use>
-              </svg>
-            </button>
+            <label class="footer-subscription-label">
+              <input
+                type="text"
+                class="footer-input-subscription"
+                name="user-subscription"
+                placeholder="E-mail"
+              />
+              <button class="footer-btn button" type="submit">
+                Підписатися
+                <svg class="footer-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </label>
           </form>
         </div>
       </div>
