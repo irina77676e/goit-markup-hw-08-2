@@ -56,11 +56,7 @@
     display: flex;
     height: 120px;
     
-     @media screen and (min-width:1200px) {
-         display: flex;
-         padding: 25px 100px;
-    }
-     @media screen and (min-width:768px) and (max-width:1200px){
+     @media screen and (min-width:768px) and (max-width:1199px){
         padding: 25px 142px;
         width: 354px;
         display: flex;
