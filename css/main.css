@@ -92,7 +92,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .container-footer {
-    margin-right: 93px;
+    margin-right: 94px;
   }
 }
 
@@ -348,13 +348,13 @@ img {
   width: 317px;
   margin-bottom: 35px;
   text-align: center;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     line-height: 1.3636363636;
     width: 696px;
-    margin: 0 auto;
     margin-bottom: 40px;
   }
 }
@@ -408,7 +408,7 @@ img {
   border-radius: 4px;
   letter-spacing: 0.06em;
 }
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (min-width: 767px) {
   .footer-btn {
     padding: 10px 28px;
   }
@@ -451,7 +451,7 @@ img {
   border-radius: 4px;
   letter-spacing: 0.06em;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .form-btn {
     padding: 10px 52px;
   }
@@ -655,9 +655,10 @@ img {
 @media screen and (min-width: 1200px) {
   .team {
     padding-bottom: 94px;
+    padding-top: 94px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -672,6 +673,13 @@ img {
 
 .team-item {
   gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-item {
@@ -837,6 +845,11 @@ img {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
+@media screen and (min-width: 1200px) {
+  .clients-link {
+    width: 170px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-link {
     width: 226px;
@@ -874,7 +887,7 @@ img {
             align-items: baseline;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-box {
     width: 768px;
     -ms-flex-pack: distribute;
@@ -945,7 +958,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer-address {
-    margin-top: 20px;
+    margin-top: 28px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1013,16 +1026,10 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--link-color);
+  margin-bottom: 20px;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .footer-title {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .footer-title {
-    margin-bottom: 20px;
     text-align: center;
   }
 }

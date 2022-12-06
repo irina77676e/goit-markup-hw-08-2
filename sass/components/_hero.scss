@@ -36,14 +36,14 @@
     width: 317px;
     margin-bottom: 35px;
     text-align: center;
+    margin: 0 auto;
 
 
     @media screen and (min-width:1200px){
-    font-size: 44px;
-    line-height: calc(60 / 44);
-    width: 696px;
-    margin: 0 auto;
-    margin-bottom: 40px;
+        font-size: 44px;
+        line-height: calc(60 / 44);
+        width: 696px;
+        margin-bottom: 40px;
     }
 
     @media screen and (min-width: 480px) and (max-width:1199px) {
